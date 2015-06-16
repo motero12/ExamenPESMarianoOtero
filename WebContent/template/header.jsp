@@ -9,5 +9,10 @@
 </head>
 <body>
 <a href="${pageContext.request.contextPath}/Tarjeta/altaTarjeta">Alta de tarjeta de crédito</a>
-    <br/>
-    
+<br/><br/>
+<a href="${pageContext.request.contextPath}/Tarjeta/ampliarCupo">Ampliar cupo de tarjeta de crédito</a>
+<br/><br/>
+<a href="${pageContext.request.contextPath}/Tarjeta/bloquearTarjeta">Bloquear tarjeta de crédito</a>
+<br/><br/>
+<a href="${pageContext.request.contextPath}/Tarjeta/efectuarPago">Pagar con tarjeta de crédito</a>
+<br/>    

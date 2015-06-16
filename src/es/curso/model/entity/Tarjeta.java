@@ -2,19 +2,20 @@ package es.curso.model.entity;
 
 public class Tarjeta {
 	private int id;
-	private long numeroTarjeta;
+	private String numeroTarjeta;
 	private int cupoMaximo;
 	private int cupoDisponible;
 	private String tipoTarjeta;
-	private int numeroComprobacion;
+	private String numeroComprobacion;
 	private short contrasenha;
 	private byte bloqueada;
 	public Tarjeta() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Tarjeta(int id, long numeroTarjeta, int cupoMaximo,
-			int cupoDisponible, String tipoTarjeta, int numeroComprobacion,
+	
+	public Tarjeta(int id, String numeroTarjeta, int cupoMaximo,
+			int cupoDisponible, String tipoTarjeta, String numeroComprobacion,
 			short contrasenha, byte bloqueada) {
 		super();
 		this.id = id;
@@ -26,16 +27,17 @@ public class Tarjeta {
 		this.contrasenha = contrasenha;
 		this.bloqueada = bloqueada;
 	}
+
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public long getNumeroTarjeta() {
+	public String getNumeroTarjeta() {
 		return numeroTarjeta;
 	}
-	public void setNumeroTarjeta(long numeroTarjeta) {
+	public void setNumeroTarjeta(String numeroTarjeta) {
 		this.numeroTarjeta = numeroTarjeta;
 	}
 	public int getCupoMaximo() {
@@ -56,10 +58,10 @@ public class Tarjeta {
 	public void setTipoTarjeta(String tipoTarjeta) {
 		this.tipoTarjeta = tipoTarjeta;
 	}
-	public int getNumeroComprobacion() {
+	public String getNumeroComprobacion() {
 		return numeroComprobacion;
 	}
-	public void setNumeroComprobacion(int numeroComprobacion) {
+	public void setNumeroComprobacion(String numeroComprobacion) {
 		this.numeroComprobacion = numeroComprobacion;
 	}
 	public short getContrasenha() {
