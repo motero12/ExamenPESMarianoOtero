@@ -8,7 +8,7 @@
     <label>Contraseña:</label>
     <input type="text" name="contrasenha" id="contrasenha"/>
     <br> <br>
-    <input type="submit" name="ampliar" value="Ampliar"/>
+    <input type="submit" name="ampliar" value="Bloquear"/>
     <input type="reset" name="cancelar" value="Cancelar"/>
 </form>
 <%@include file="../template/footer.jsp"%>

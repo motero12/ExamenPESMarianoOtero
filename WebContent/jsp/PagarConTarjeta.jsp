@@ -14,7 +14,7 @@
     <label>Importe del pago:</label>
     <input type="number" name="importePago" id="importePago"/>
     <br> <br>
-    <input type="submit" name="ampliar" value="Ampliar"/>
+    <input type="submit" name="ampliar" value="Pagar"/>
     <input type="reset" name="cancelar" value="Cancelar"/>
 </form>
 <%@include file="../template/footer.jsp"%>

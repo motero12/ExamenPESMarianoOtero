@@ -11,7 +11,7 @@ public class ComprobarPagoEjb implements ComprobarPago{
 		// TODO Auto-generated method stub
 		Tarjeta tarjeta=new Tarjeta();
 		TarjetaDaoJdbc tarjetaDao=new TarjetaDaoJdbc();
-		tarjetaDao.consultarTarjeta(numeroTarjeta, contrasenha, numeroComprobacion);
+		tarjeta=tarjetaDao.consultarTarjeta(numeroTarjeta, contrasenha, numeroComprobacion);
 		int cupoDispon=tarjeta.getCupoDisponible();
 		if((importePago+20)<=cupoDispon){
 			importePago=tarjeta.getCupoDisponible() - importePago;
