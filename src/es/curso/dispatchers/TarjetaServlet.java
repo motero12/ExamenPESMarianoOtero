@@ -116,10 +116,9 @@ public class TarjetaServlet extends HttpServlet {
 				rd.forward(request, response);
 				break;
 			case "pagarConTarjeta":
-				String numTarjetaPago=new String("numeroTarjeta");
-//				long numTarjetaPago= Long.parseLong("numeroTarjeta");
+				String numTarjetaPago=new String(request.getParameter("numeroTarjeta"));
 				short contrasenhaPago= Short.parseShort(request.getParameter("contrasenha"));
-				String numComprobaPago=new String("numeroComproba");
+				String numComprobaPago=new String(request.getParameter("numeroComproba"));
 				int importePago=Integer.parseInt(request.getParameter("importePago"));
 				Tarjeta tarjetaPagar=new Tarjeta();
 				ComprobarPagoEjb comprobarPago=new ComprobarPagoEjb();

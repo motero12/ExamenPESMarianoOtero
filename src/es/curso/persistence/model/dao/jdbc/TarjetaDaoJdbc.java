@@ -83,9 +83,6 @@ public class TarjetaDaoJdbc implements TarjetaDao {
 			PreparedStatement ps=cx.prepareStatement("update tarjetacredito set cupoDisponible = cupoDisponible + ?"
 					+ " where numeroTarjeta= ?"
 					+ " and contrasenha= ?");
-//			System.out.println("en dao cupoTarjeta es"+cupoTarjeta);
-//			System.out.println("en dao numeroTarjeta es"+numeroTarjeta);
-//			System.out.println("en dao contrasenha es "+contrasenha);
 			ps.setInt(1, cupoTarjeta);
 			ps.setString(2, numeroTarjeta);
 			ps.setShort(3, contrasenha);
@@ -93,11 +90,9 @@ public class TarjetaDaoJdbc implements TarjetaDao {
 			// hacer commit
 			cx.commit();
 		} catch (SQLException e) {
-			System.out.println("dentro de catch sqlexception pral de dao");
 			try {
 				cx.rollback();
 			} catch (SQLException e1) {
-				System.out.println("dentro de catch sqlexception de rollback de dao");
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
@@ -126,7 +121,6 @@ public class TarjetaDaoJdbc implements TarjetaDao {
 			try {
 				cx.rollback();
 			} catch (SQLException e1) {
-				System.out.println("dentro de catch sqlexception de rollback de dao");
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
@@ -168,7 +162,6 @@ public class TarjetaDaoJdbc implements TarjetaDao {
 			try {
 				cx.rollback();
 			} catch (SQLException e1) {
-				System.out.println("dentro de catch sqlexception de rollback de dao");
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
@@ -201,7 +194,6 @@ public class TarjetaDaoJdbc implements TarjetaDao {
 			try {
 				cx.rollback();
 			} catch (SQLException e1) {
-				System.out.println("dentro de catch sqlexception de rollback de dao");
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
