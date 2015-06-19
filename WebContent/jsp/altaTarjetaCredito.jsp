@@ -52,10 +52,8 @@
                     <option value=1>SI</option>
                 </select>
                 <br/><br/>
-                
                 <input type="submit" id="Enviar" class="mano" value="enviar">
                 <input type="reset" id="Borrar" class="mano" value="borrar">
-                
             </form>
         </section>
     </section>
